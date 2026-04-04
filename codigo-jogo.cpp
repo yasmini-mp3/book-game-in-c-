@@ -7,18 +7,18 @@ int main()
 {
   setlocale(LC_ALL, "Portuguese");
 
-    int dia, decisao, danoboos, danoprota, vidaprota, vidabqss;
+    int dia, decisao, danoboss, danoprota, vidaprota, vidaboss;
 
 
-	cout<<"VocC* C) um estudante universitC!rio. Na sua universidade desaparecimentos de alunos tem se tornado frequentes, mas sem explicaC'C#o alguma.";
-	cout<<"Todos os alunos estC#o preocupados e muitas faltas estC#o ocorrendo, mas isso nC#o te fez faltar hoje. Por que justo hoje? VocC* estC! caminhando por um lugar vazio do campus durante seu intervalo, mas ouve um barulho atrC!s de vocC*. Quando se vira, sC3 vC* um vulto te nocauteando. Ao acordar vocC* nC#o consegue enxergar nada por conta da iluminaC'C#o, mas sente um forte cheiro ruim.";
-	cout<<"Enquanto sua visC#o se acostuma com a escuridC#o vocC* percebe que estC! amarrado em uma maca de uma forma que C) muito fC!cil de escapar, C  sua volta hC! partes robC3ticasem teste e um caminho no esgoto estC! na sua frente.\n";
-	cout<<"vocC* se desamarra?\n";
+	cout<<"Você é um estudante universitário. Na sua universidade desaparecimentos de alunos tem se tornado frequentes, mas sem explicação alguma.";
+	cout<<"Todos os alunos estão preocupados e muitas faltas estão ocorrendo, mas isso não te fez faltar hoje. Por que justo hoje? Você está caminhando por um lugar vazio do campus durante seu intervalo, mas ouve um barulho atrás de você. Quando se vira, só vê um vulto te nocauteando. Ao acordar você não consegue enxergar nada por conta da iluminação, mas sente um forte cheiro ruim.";
+	cout<<"Enquanto sua visão se acostuma com a escuridão você percebe que está amarrado em uma maca de uma forma que é muito fácil de escapar, à sua volta há partes robóticas em teste e um caminho no esgoto está na sua frente.\n";
+	cout<<"você se desamarra?\n";
 	cout<<"1 - Desamarrar.\n";
 	cout<<"2 - Esperar.\n";
 	cin>>decisao;
     switch (decisao) {
-        case 1:  decisao = 1
+        case 1:  decisao = 1;
         break;
         case 2:
             cout << "Por algum motivo, de forma peculiar você decide esperar até algo acontecer.\nA espera paciente não resulta em nada, além de um tédio imensurável... Não aparenta que alguém irá te salvar.\n";
