@@ -7,7 +7,13 @@ int main()
 {
   setlocale(LC_ALL, "Portuguese");
 
-    int dia, decisao, danoboss, danoprota, vidaprota, vidaboss;
+    int decisao;
+    int dia;
+	int vidaProta = 10;
+	int vidaBoss = 16;
+	int danoProta = 1;
+	int aliados = 0;
+	bool faca = false;
 
 
 	cout<<"Você é um estudante universitário. Na sua universidade desaparecimentos de alunos tem se tornado frequentes, mas sem explicação alguma.";
@@ -53,20 +59,11 @@ int main()
             break;
            }
 }
-            dia == 2;
         if (decisao == 1){
             cout<<"Ao se desamarrar você segue em direção ao esgoto buscando uma saída desse lugar. Enquanto andava você se depara com uma bifurcação.\n";
             cout<<"De um lado você sente um ar frio e mais escuridão, do outro você sente um ar quente e no fundo o que parece ser uma luz não natural.\n Por qual caminho você deseja seguir?\n1 - Frio e escuro \n2 - Quente iluminado\n";
             cin>> decisao;
-            switch (decisao) {
-                case 1:
-                cout << "Você prefere não se arriscar e ir atrás de um lugar que provavelmente não está vazio.\nAo andar você sente a água de esgoto molhando mais a sua roupa e ouve barulhos de ratos passando por você, mas está escuro demais para ver eles.\nUm vento frio vindo do caminho à sua frente te dá arrepios, mas após uma caminhada você encontra outra divisão.\nAtrás de você, a bifurcação de antes, sendo possível ver a iluminação que você fugiu.";     
-                
-                
-                
-                
-            }
+            
         }
   return 0;
-
 }
