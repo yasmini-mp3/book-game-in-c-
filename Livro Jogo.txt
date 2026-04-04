@@ -1,0 +1,75 @@
+Você é um estudante universitário. Na sua universidade desaparecimentos de alunos tem se tornado frequentes, mas sem explicação alguma. Todos os alunos estão preocupados e muitas faltas estão ocorrendo, mas isso não te fez faltar hoje. Por que justo hoje? Você está caminhando por um lugar vazio do campus durante seu intervalo, mas ouve um barulho atrás de você. Quando se vira, só vê um vulto te nocauteando. Ao acordar você não consegue enxergar nada por conta da iluminação, mas sente um forte cheiro ruim. Enquanto sua visão se acostuma com a escuridão você percebe que está amarrado em uma maca de uma forma que é muito fácil de escapar, à sua volta há partes robóticas em teste e um caminho no esgoto está na sua frente.
+
+Você se desamarra?
+
+1 - sim -> continua a história
+2 - não - > repete algumas vezes a pergunta e depois de um tempo o sequestrador volta e te mata
+
+[SIM]:
+Ao se desamarrar você segue em direção ao esgoto buscando uma saída desse lugar. Enquanto andava você se depara com uma bifurcação. De um lado você sente um ar frio e mais escuridão, do outro você sente um ar quente e no fundo o que parece ser uma luz não natural. 
+Por qual caminho você deseja seguir?
+1 - Frio e escuro -> Segue o caminho do esgoto normalmente
+2 - Quente iluminado -> Encontra algo
+
+[QUENTE E ILUMINADO]:
+Indo atrás da luz você caminha por pouco tempo na água suja do esgoto até começar a ver uma lâmpada fluorescente de tom alaranjado que não segue o caminho principal. Ela ilumina uma sala semelhante à que você estava "preso", mas agora é outra pessoa ainda desmaiada e com seu braço substituído por uma prótese robótica. Você reconhece o aluno de um cartaz de desaparecido pela universidade. Nessa mesma sala você encontra uma faca.
+
+Pegar a faca?
+1 - Sim -> Opção a mais no combate final
+2 - Não -> Fica sem né, fazer o que
+
+Você quer libertar o aluno desaparecido?
+1 - Sim -> Obtém ajuda para a luta
+2 - Não -> Você o deixa lá sem noção de qual será o futuro dele
+
+Após todas as decisões da sala o protagonista segue o caminho principal se deparando com outra divisão de caminhos
+
+[FRIO E ESCURO]:
+Você prefere não se arriscar e ir atrás de um lugar que provavelmente não está vazio. Ao andar você sente a água de esgoto molhando mais a sua roupa e ouve barulhos de ratos passando por você, mas está escuro demais para ver eles. Um vento frio vindo do caminho à sua frente te dá arrepios, mas após uma caminhada você encontra outra divisão. Atrás de você, a bifurcação de antes, sendo possível ver a iluminação que você fugiu.
+
+Para as duas escolhas após chegar na divisão de caminhos:
+Após tudo isso você se depara com três caminhos diferentes na sua frente. Um vai para a esquerda com o mesmo nível de luz no final que foi visto antes, mas dele é possível ouvir gritos que não há como distinguir o que está sendo dito. O segundo caminho vai para o meio novamente iluminado pela lâmpada alaranjada, mas com barulhos de ferramentas vindo de dentro do túnel. O último caminho está escuro e com um cheiro muito pior do que o normal.
+
+Por qual caminho deseja ir?
+
+1 - Iluminado com gritos -> Encontrar outra pessoa
+2 - Iluminado com barulhos de ferramentas -> Encontrar com o sequestrador e começa a luta
+3 - Escuro com cheiro forte -> Encontra um aluno desaparecido que já se foi
+
+[ILUMINADO COM GRITOS]:
+Você se preocupa com quem quer que esteja gritando e vai até a fonte do barulho. Ao chegar na sala iluminada percebe (Se foi na sala iluminada antes: que é mais uma sala igual a sua e a que você encontrou o outro aluno)/(Se não foi: que ela é parecida com a que você estava quando acordou). Há um aluno desaparecido no meio desesperado por ter sua perna substituída por uma prótese robótica e não sabe quem fez isso com ele. 
+
+Você quer tentar acalmar ele?
+1 - Sim -> Roda um número aleatório de um a cinco. Se cair um número escolhido por quem programar, o aluno se acalma. Caso o protagonista tenha salvo o outro aluno as chances caem de 1 em 5 pra 1 em 3.
+2 - Não -> Não tem mais o que fazer na sala, só voltar para a divisão e escolher outro caminho.
+
+[ESCURO COM CHEIRO FORTE]:
+Você segue mais uma vez o caminho quieto e escuro, por mais que o cheiro seja ruim, ainda não é insuportável. Depois de um tempo andando pelos rios de água suja você encontra uma sala igual a que você estava amarrado. Está toda apagada com algumas partes robóticas na parede, mas o lugar onde deveria estar somente o corpo de um aluno preso tem um pano acobertando tudo. É possível compreender que ele não resistiu os experimentos. Você não acha uma saída nesse lugar então decide voltar para a divisão.
+
+
+/*OS outros dois caminhos só dão contexto ou mais chance para a luta final que é a próxima coisa a ser escrita. Caso o protagonista tenha libertado os dois alunos sobreviventes ele consegue dar mais 2 de dano no boss final. Caso ele tenha a faca, cada ataque dele dá 2 de dano também. Basicamente:
+Só o protagonista -> 1 de dano cada vez que acerta.
+Protagonista + aluno desaparecido -> 1 de dano + quantidade de alunos que ele tem com ele.
+Protagonista com a faca -> 2 de dano cada vez que ele acerta.
+Protagonista com a faca + aluno desaparecido -> 2 de dano + quantidade de alunos que ele tem com ele.
+*/
+
+[ILUMINADO COM BARULHOS DE FERRAMENTAS]:
+
+Você segue o caminho e encontra um homem de cabelo longo preto usando luvas, um jaleco, óculos de proteção e um serrote. Reto no fim da sala é possível ver uma escada grande que vai até o teto onde uma tampa de esgoto é vista. Ele se vira em direção à você(s) e diz "Não acredito que um erro ao amarrar me causaria tanto problema. Como você chegou até aqui? Agora isso não importa, vou ter que achar outras cobaias para meu experimento.". Após falar isso ele corre em sua direção com o serrote na mão e tenta te atacar.
+
+O que você faz?
+1 - Bloqueio -> Reduz 1 de dano (Como o sequestrador usa um serrote ele dá 2 de dano. Sem o serrote ele dá 1)
+2 - Esquivo -> Chance de esquivar completamente do dano(Não tenho certeza de quanto colocar de chance pra ficar equilibrado)
+
+Agora é sua hora! Você deseja atacar?
+1 - Sim -> Tabela de dano que eu falei antes. O Boss sempre vai esquivar e as chances dele se esquivar também não foram definidas por mim. 
+2 - Não -> Tá bom né, vez do Boss de novo.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A estrutura de batalha se repete até um dos integrantes principais da luta zerar a vida.
+Vida do Boss: 16
+Vida do Protagonista: 10
+Acho que isso é mais equilibrado pelas formas do jogador conseguir dar até 4 de dano.
+Assim que o boss fica com 8 ou menos de vida ele fica machucado e deixa seu serrote cair, começando a dar 1 de dano só.
