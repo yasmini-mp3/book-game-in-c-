@@ -16,6 +16,7 @@ int main()
 	int danoProta = 1;
 	int aliados = 0;
 	bool faca = false;
+	bool chaveboss = false; // adicionado pra garantir que o personagem chegue ao boss
 
 
 	cout<<"Você é um estudante universitário. Na sua universidade desaparecimentos de alunos tem se tornado frequentes, mas sem explicação alguma.";
@@ -61,6 +62,7 @@ int main()
             break;
            }
 }
+            dia == 2;
         if (decisao == 1){
             cout<<"Ao se desamarrar você segue em direção ao esgoto buscando uma saída desse lugar. Enquanto andava você se depara com uma bifurcação.\n";
             cout<<"De um lado você sente um ar frio e mais escuridão, do outro você sente um ar quente e no fundo o que parece ser uma luz não natural.\n Por qual caminho você deseja seguir?\n1 - Frio e escuro \n2 - Quente iluminado\n";
@@ -104,7 +106,7 @@ int main()
             cout<<"Após tudo isso você se depara com três caminhos diferentes na sua frente.\n Um vai para a esquerda com o mesmo nível de luz no final que foi visto antes, mas dele é possível ouvir gritos que não há como distinguir o que está sendo dito.\n";
             cout<<"O segundo caminho vai para o meio novamente iluminado pela lâmpada alaranjada, mas com barulhos de ferramentas vindo de dentro do túnel.\n O último caminho está escuro e com um cheiro muito pior do que o normal.\n";
             cout<<"Por qual caminho você deseja seguir?\n 1 - Iluminado com gritos\n 2 - Iluminado com barulhos de ferramentas\n 3 - Escuro com cheiro forte\n";
-            cin>>decisao
+            cin>>decisao;
             switch (decisao){
                 case 1: 
                 cout<<"Você se preocupa com quem quer que esteja gritando e vai até a fonte do barulho.\n Ao chegar na sala iluminada você percbe ser uma sala parecida com a que você veio.\n Ela é aberta com invenções tecnológicas e no meio a fonte do barulho.\n";
@@ -115,12 +117,12 @@ int main()
                     cout<<"No meio há o que parece ser um dos alunos desaparecidos gritando de desespero por ter sua perna substituída por uma prótese robótica.\n";
                 }
                 cout<<"Ele te olha desesperadamente, mostrando que não tem certeza de quem fez isso com ele.\n Você deseja tentar acalmar ele?\n 1 - Sim\n 2 - Não\n";
-                cin>>libertar
+                cin>>libertar;
                 if (libertar == 1 and aliados == 1){
                         srand(time(NULL));
                         chance = rand()%3;
                         if (chance == 2){
-                            aliados = 2
+                            aliados = 2;
                             cout<<"Você, com a presença de seu outro aliado, consegue acalmar e libertar o outro aluno.\n Assim você conseguiu mais um companheiro.\n";
                         }
                         else{
@@ -131,7 +133,7 @@ int main()
                     srand(time(NULL));
                     chance = rand()%5;
                     if (chance == 4){
-                        aliados = 2
+                        aliados = 2;
                         cout<<"Você consegue acalmar e libertar o aluno.\n Assim você conseguiu um companheiro.\n";
                     }
                     else{
@@ -145,17 +147,22 @@ int main()
                 cout<<"Agora com os caminhos restantes qual você pretende seguir?\n 2 - Iluminado com barulhos de ferramentas\n 3 - Escuro com cheiro forte\n";
                 cin>>decisao;
                 switch(decisao){
-                    case 2: decisao = 2;
+                    case 2: 
+                           decisao = 7;
+                           chaveboss = true;
                     break;
                     case 3:
                     cout<<"Você segue mais uma vez o caminho quieto e escuro, por mais que o cheiro seja ruim, ainda não é insuportável.\n Depois de um tempo andando pelos rios de água suja você encontra uma sala igual a que você estava amarrado.\n";
                     cout<<"A sala está toda apagada com algumas partes robóticas na parede, mas o lugar onde deveria estar somente o corpo de um aluno preso tem um pano acobertando tudo.\n É possível compreender que ele não resistiu os experimentos.\n Você não acha uma saída nesse lugar então decide voltar para a divisão.\n";
                     cout<<"Agora com o caminho restante você só pode seguir em direção ao barulho de ferramentas.\n";
-                    decisao = 2;
+                    decisao = 7;
+                    chaveboss = true;
                     break;
                 }
-                case 2: decisao = 2;
-                break;
+                case 2:
+                    decisao = 7;
+                    chaveboss = true;
+                    break;
                 case 3:
                 cout<<"Você segue mais uma vez o caminho quieto e escuro, por mais que o cheiro seja ruim, ainda não é insuportável.\n Depois de um tempo andando pelos rios de água suja você encontra uma sala igual a que você estava amarrado.\n";
                 cout<<"A sala está toda apagada com algumas partes robóticas na parede, mas o lugar onde deveria estar somente o corpo de um aluno preso tem um pano acobertando tudo.\n É possível compreender que ele não resistiu os experimentos.\n Você não acha uma saída nesse lugar então decide voltar para a divisão.\n";
@@ -171,12 +178,12 @@ int main()
                         cout<<"No meio há o que parece ser um dos alunos desaparecidos gritando de desespero por ter sua perna substituída por uma prótese robótica.\n";
                     }
                     cout<<"Ele te olha desesperadamente, mostrando que não tem certeza de quem fez isso com ele.\n Você deseja tentar acalmar ele?\n 1 - Sim\n 2 - Não\n";
-                    cin>>libertar
+                    cin>>libertar;
                     if (libertar == 1 and aliados == 1){
                         srand(time(NULL));
                         chance = rand()%3;
                         if (chance == 2){
-                            aliados = 2
+                            aliados = 2;
                             cout<<"Você, com a presença de seu outro aliado, consegue acalmar e libertar o outro aluno.\n Assim você conseguiu mais um companheiro.\n";
                         }
                         else{
@@ -187,7 +194,7 @@ int main()
                         srand(time(NULL));
                         chance = rand()%5;
                         if (chance == 4){
-                            aliados = 2
+                            aliados = 2;
                             cout<<"Você consegue acalmar e libertar o aluno.\n Assim você conseguiu um companheiro.\n";
                         }
                         else{
@@ -199,17 +206,111 @@ int main()
                     }
                     cout<<"Com tudo possível para ser feito na sala já decidido, você resolve voltar para o início da divisão.\n";
                     cout<<"Agora com o caminho restante você só pode seguir em direção ao barulho de ferramentas.\n";
-                    decisao = 2;
+                    decisao = 7;
+                    chaveboss = true;
                     break;
-                    case 2: decisao = 2;
+                    case 2: 
+                    decisao =  7;
+                    chaveboss = true;
                     break;
                 }
-                if (decisao == 2){
-                    //AQUI É QUANDO O PROTAGONISTA FOR PARA O CAMINHO COM BARULHO DE FERRAMENTAS E COMEÇAR A LUTA FINAL
-                }
-                }
-        } 
+               }
+           }
+        if (chaveboss == true){
+        cout<< "Você segue o caminho e encontra um homem de cabelo longo preto usando luvas, um jaleco, óculos de proteção e um serrote.\nReto no fim da sala é possível ver uma escada grande que vai até o teto onde uma tampa de esgoto é vista.\n"; 
+        cout<< "Ele se vira em direção à você(s) e diz:\nNão acredito que um erro ao amarrar me causaria tanto problema. Como você chegou até aqui? Agora isso não importa, vou ter que achar outras cobaias para meu experimento.\nApós falar isso ele corre em sua direção com o serrote na mão e tenta te atacar.\n";
         
-    
-  return 0;
+        bool serrote = true;
+
+    for (int turno = 1; turno <= 100; turno++) {
+
+        if (vidaProta <= 0 || vidaBoss <= 0) {
+            break;
+        }
+
+        cout << "\n--- TURNO " << turno << " ---\n";
+        cout << "Sua vida: " << vidaProta << " | Vida do Boss: " << vidaBoss << endl;
+
+        cout << "\nO que você faz?\n";
+        cout << "1 - Bloqueio\n";
+        cout << "2 - Esquivo\n";
+        cin >> decisao;
+
+        int danoBoss = serrote ? 2 : 1;
+        int danoRecebido = danoBoss;
+
+        switch (decisao) {
+            case 1: 
+                danoRecebido -= 1;
+                cout << "Você bloqueou parte do dano!\n";
+                break;
+
+            case 2: { 
+                int chance = rand() % 100;
+                if (chance < 40) {
+                    danoRecebido = 0;
+                    cout << "Você esquivou completamente!\n";
+                } else {
+                    cout << "Você falhou na esquiva!\n";
+                }
+                break;
+            }
+
+            default:
+                cout << "Você hesitou...\n";
+                break;
+        }
+
+        vidaProta -= danoRecebido;
+        cout << "Você recebeu " << danoRecebido << " de dano.\n";
+
+        if (vidaProta <= 0) {
+            break;
+        }
+
+        cout << "\nAgora é sua vez! Deseja atacar?\n";
+        cout << "1 - Sim\n";
+        cout << "2 - Não\n";
+        cin >> decisao;
+
+        switch (decisao) {
+            case 1: {
+                int chanceBoss = rand() % 100;
+
+                if (chanceBoss < 30) {
+                    cout << "O Boss esquivou!\n";
+                } else {
+                    vidaBoss -= danoProta;
+                    cout << "Você acertou o Boss!\n";
+                }
+                break;
+            }
+
+            case 2:
+                cout << "Você não atacou...\n";
+                break;
+
+            default:
+                cout << "Você ficou indeciso...\n";
+                break;
+        }
+
+      
+        int evento = rand() % 10;
+        if (evento == 0 && serrote) {
+            serrote = false;
+            cout << "\nO Boss deixou o serrote cair! Agora causa menos dano!\n";
+        }
+    }
+    // temos que adicionar algo a mais para o final do game... algo para o final da história =)
+    // isso só esta para testar tudo
+    if (vidaProta > 0 && vidaBoss <= 0) {
+        cout << "\nVocê venceu!\n";
+    } else if (vidaProta <= 0) {
+        cout << "\nVocê foi derrotado...\n";
+    } else {
+        cout << "\nA luta terminou sem vencedor.\n";
+    }
+}
+            return 0;
 }
