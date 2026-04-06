@@ -284,7 +284,12 @@ int main()
 
         bool serrote = true;
         int acaoBatalha;         // organizar as ações do jogador durante a batalha
-        danoProta = 1 + aliados; // recalcula COM os aliados que foram coletados na historia, cada aliado contribui com +1 de dano
+        if (faca == true){
+            danoProta = 2 + aliados // recalcula COM os aliados que foram coletados na historia, cada aliado contribui com +1 de dano
+        }   
+        else{
+            danoProta = 1 + aliados;
+        }
         for (int turno = 1; turno <= 100; turno++)
         {
 
