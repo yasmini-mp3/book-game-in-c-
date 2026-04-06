@@ -96,7 +96,7 @@ int main()
         }
     }
     dia = 2;
-    cout << "\n--- Dia " << dia << " ---\n"
+    cout << "\n--- Capítulo " << dia << ": Becos profundos---\n"
          << endl;
 
     if (decisao == 1)
@@ -390,31 +390,28 @@ int main()
         }
         // temos que adicionar algo a mais para o final do game... algo para o final da história =)
         // isso só esta para testar tudo
-        if (vidaProta > 0 && vidaBoss <= 0)
+        if (vidaProta > 0 && vidaBoss <= 0 and aliados <= 0)
         {
             cout << "\nA Ascensão sob a Luz Alaranjada...\n";
-                cout << "O aço do serrote corta o ar, mas não o seu espírito, agora fortalecido pela presença daqueles que você não deixou para trás. \n";
-                cout << "Cada aliado resgatado nas salas de luz alaranjada tornou-se um peso a mais contra o seu carrasco, transformando o desespero individual em uma força coletiva de retribuição. \n";
-                cout << "Quando o homem de jaleco cai e o serrote escapa de suas mãos trêmulas, o silêncio do esgoto é finalmente quebrado pelo som da tampa de metal sendo aberta.\n";
-                cout << "A luz que entra pelo bueiro não é mais artificial; é a promessa de um amanhã que você conquistou a golpes de coragem.\n";
-                cout << "Você emerge do esgoto, não apenas como um sobrevivente, mas como um símbolo de resistência contra as sombras que assombravam o campus. \n";
-                cout << "Parabens, Sua determinação e compaixão foram a chave para sua vitória, end game.\n";
+            cout << "Quando o homem de jaleco cai e o serrote escapa de suas mãos trêmulas, o silêncio do esgoto é finalmente quebrado pelo som da tampa de metal sendo aberta.\n";
+            cout << "A luz que entra pelo bueiro não é mais artificial; é a promessa de um amanhã que você conquistou a golpes de coragem.\n";
+            cout << "Você emerge do esgoto, não apenas como um sobrevivente, mas como um símbolo de resistência contra as sombras que assombravam o campus. \n";
+            cout << "Parabéns, Sua determinação e compaixão foram a chave para sua vitória, end game.\n";
+        }
+        else if (vidaProta > 0 and vidaBoss <= 0 and aliados > 0){
+            cout << "\nA Ascensão sob a Luz Alaranjada...\n";
+            cout << "O aço do serrote corta o ar, mas não o seu espírito, agora fortalecido pela presença daqueles que você não deixou para trás. \n";
+            cout << "Cada aliado resgatado nas salas de luz alaranjada tornou-se um peso a mais contra o seu carrasco, transformando o desespero individual em uma força coletiva de retribuição. \n";
+            cout << "Quando o homem de jaleco cai e o serrote escapa de suas mãos trêmulas, o silêncio do esgoto é finalmente quebrado pelo som da tampa de metal sendo aberta.\n";
+            cout << "A luz que entra pelo bueiro não é mais artificial; é a promessa de um amanhã que você conquistou a golpes de coragem.\n";                cout << "Você emerge do esgoto, não apenas como um sobrevivente, mas como um símbolo de resistência contra as sombras que assombravam o campus. \n";
+            cout << "Parabéns, Sua determinação e compaixão foram a chave para sua vitória, end game.\n";
         }
         else if (vidaProta <= 0)
         {
             cout << "\nO Último Degrau da Escada...\n";
             cout << "A liberdade estava à vista, personificada naquela escada que desafiava o teto de concreto, mas o corpo já não respondia aos comandos da vontade. \n";
             cout << "O confronto final, um jogo cruel de esquivas falhas e bloqueios insuficientes, drenou suas últimas forças sob o olhar indiferente do agressor, cujos olhos frios refletiam a satisfação de um trabalho bem executado. \n";
-            cout << "Enquanto o agressor avança para finalizar seu experimento macabro, a tampa do bueiro permanece fechada, selando seu destino como mais um desaparecido cujos gritos jamais alcançaram a superfície. Nas profundezas do campus, o seu capítulo termina com o brilho metálico de um serrote e o frio de um chão de esgoto. \n";
-            cout << "Você sente sua determinação se esvaindo.. end game.\n"; 
-        }
-        else
-        {
-            cout << "\nO Silêncio da Inércia.\n";
-            cout << "A paciência, em certas circunstâncias, deixa de ser uma virtude para se tornar uma sentença. Ao escolher o imobilismo diante do horror, você permitiu que o tempo — seu recurso mais precioso — se esgotasse sob o tédio imensurável das amarras. \n";
-            cout << "O retorno do sequestrador não trouxe respostas, apenas a fúria de quem não tolera a inutilidade. \n";
-            cout << "O aço frio silencia o último grito dos seus aliados, cujos corpos agora adornam o chão como monumentos ao seu fracasso. \n";
-            cout << "No fim, a inércia devorou a todos, deixando apenas o pó e a certeza de que o silêncio é a única herança que resta. O horror venceu, mas não há sobreviventes para contar a história.\n";
+            cout << "Enquanto o agressor avança para finalizar seu experimento macabro, a tampa do bueiro permanece fechada, selando seu destino como mais um desaparecido cujos gritos jamais alcançaram a superfície.\n Nas profundezas do campus, o seu capítulo termina com o brilho metálico de um serrote e o frio de um chão de esgoto. \n";
             cout << "Você sente sua determinação se esvaindo.. end game.\n"; 
         }
     }
