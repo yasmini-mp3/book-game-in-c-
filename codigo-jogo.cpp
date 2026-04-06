@@ -283,9 +283,9 @@ int main()
         cout << "Ele se vira em direção à você(s) e diz:\nNão acredito que um erro ao amarrar me causaria tanto problema. Como você chegou até aqui? Agora isso não importa, vou ter que achar outras cobaias para meu experimento.\nApós falar isso ele corre em sua direção com o serrote na mão e tenta te atacar.\n";
 
         bool serrote = true;
-        int acaoBatalha;         // organizar as ações do jogador durante a batalha
+        int acaoBatalha = 0;         // organizar as ações do jogador durante a batalha
         if (faca == true){
-            danoProta = 2 + aliados; // recalcula COM os aliados que foram coletados na historia, cada aliado contribui com +1 de dano
+            danoProta = 2 + aliados;// recalcula COM os aliados que foram coletados na historia, cada aliado contribui com +1 de dano
         }   
         else{
             danoProta = 1 + aliados;
